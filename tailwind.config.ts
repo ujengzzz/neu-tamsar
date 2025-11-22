@@ -14,8 +14,9 @@ export default {
     },
     extend: {
       fontFamily: {
-        display: ['Outfit', 'sans-serif'],
-        body: ['Manrope', 'sans-serif'],
+        display: ['Fredoka', 'sans-serif'],
+        body: ['Poppins', 'sans-serif'],
+        handwritten: ['Comic Neue', 'cursive'],
       },
       colors: {
         border: "hsl(var(--border))",
