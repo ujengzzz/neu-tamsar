@@ -29,10 +29,7 @@ const Hero = () => {
               <img src={logoWithName} alt="Neutron Bandung-2" className="h-16 md:h-20" />
             </div>
             
-            <h1 className="text-4xl md:text-6xl font-display font-bold mb-6 text-foreground leading-tight">Langkah Pasti
-Meraih Prestasi                                                                                                                                                                                                                             
-                                                                                                                                                                                                                                                                                                             
-                 
+            <h1 className="text-4xl md:text-6xl font-display font-bold mb-6 text-foreground leading-tight">Langkah Pasti Meraih Prestasi
 
 
 
