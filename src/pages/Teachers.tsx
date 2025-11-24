@@ -4,54 +4,83 @@ import { useRef } from "react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Award, BookOpen } from "lucide-react";
+import teacherTiara from "@/assets/teacher-tiara.jpg";
+import teacherAisyah from "@/assets/teacher-aisyah.jpg";
+import teacherLaras from "@/assets/teacher-laras.jpg";
+import teacherAdlina from "@/assets/teacher-adlina.jpg";
+import teacherIrkham from "@/assets/teacher-irkham.jpg";
+import teacherHeru from "@/assets/teacher-heru.jpg";
+import teacherHerman from "@/assets/teacher-herman.jpg";
+import teacherKahfi from "@/assets/teacher-kahfi.jpg";
+import teacherHilqiPrawesty from "@/assets/teacher-hilqi-prawesty.jpg";
 
 const Teachers = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
-  // Placeholder teacher data
   const teachers = [
     {
-      name: "Dr. Budi Santoso",
-      subject: "Matematika & Fisika",
-      experience: "15 tahun",
-      achievement: "Lulusan ITB, Guru Berprestasi 2023",
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop",
+      name: "Tiara Tania",
+      subject: "Geografi & Sosiologi",
+      experience: "7 tahun",
+      achievement: "Lulusan UPI, Guru Berprestasi",
+      image: teacherTiara,
     },
     {
-      name: "Rina Wijaya, S.Pd",
-      subject: "Bahasa Indonesia & Inggris",
-      experience: "10 tahun",
-      achievement: "Certified TESOL Teacher",
-      image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=400&fit=crop",
+      name: "Aisyah Maziyya",
+      subject: "Biologi",
+      experience: "6 tahun",
+      achievement: "Lulusan IPB, Certified Educator",
+      image: teacherAisyah,
     },
     {
-      name: "Prof. Ahmad Dahlan",
-      subject: "Kimia & Biologi",
-      experience: "20 tahun",
-      achievement: "Lulusan S3 UGM, Penulis Buku",
-      image: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=400&h=400&fit=crop",
-    },
-    {
-      name: "Lisa Hartono, M.Pd",
-      subject: "Ekonomi & Geografi",
+      name: "Laras Salmawati",
+      subject: "Kimia",
       experience: "8 tahun",
-      achievement: "Juara Olimpiade Guru Nasional",
-      image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop",
+      achievement: "Lulusan ITB, Expert Kimia",
+      image: teacherLaras,
     },
     {
-      name: "Andi Setiawan",
-      subject: "TPS & Logika",
-      experience: "12 tahun",
-      achievement: "Alumni UI, UTBK Expert",
-      image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=400&fit=crop",
-    },
-    {
-      name: "Nina Kusuma, S.Si",
-      subject: "Matematika Lanjut",
+      name: "Adlina Saelan",
+      subject: "Matematika",
       experience: "9 tahun",
-      achievement: "Medalis Olimpiade Matematika",
-      image: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=400&h=400&fit=crop",
+      achievement: "Lulusan UI, Olimpiade Matematika",
+      image: teacherAdlina,
+    },
+    {
+      name: "Irkham Zamzuri",
+      subject: "Bahasa Inggris",
+      experience: "10 tahun",
+      achievement: "TESOL Certified, TOEFL Expert",
+      image: teacherIrkham,
+    },
+    {
+      name: "Heru Tri Wibowo",
+      subject: "Matematika",
+      experience: "12 tahun",
+      achievement: "Lulusan UGM, Expert UTBK",
+      image: teacherHeru,
+    },
+    {
+      name: "Herman Yudiana",
+      subject: "Fisika",
+      experience: "11 tahun",
+      achievement: "Lulusan ITB, Fisika Champion",
+      image: teacherHerman,
+    },
+    {
+      name: "Kahfi Achmad",
+      subject: "Bahasa Indonesia",
+      experience: "8 tahun",
+      achievement: "Lulusan UPI, Sastrawan Muda",
+      image: teacherKahfi,
+    },
+    {
+      name: "Hilqi Prawesty",
+      subject: "Bahasa Inggris",
+      experience: "7 tahun",
+      achievement: "Cambridge Certified, IELTS Expert",
+      image: teacherHilqiPrawesty,
     },
   ];
 
@@ -79,7 +108,7 @@ const Teachers = () => {
       </section>
 
       {/* Teachers Grid */}
-      <section ref={ref} className="py-16 px-4">
+      <section ref={ref} className="py-16 px-4 pb-32">
         <div className="container mx-auto">
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {teachers.map((teacher, index) => (
@@ -90,14 +119,14 @@ const Teachers = () => {
                 transition={{ duration: 0.6, delay: index * 0.1 }}
                 className={`group ${index % 3 === 0 ? '-rotate-1' : index % 3 === 1 ? 'rotate-1' : '-rotate-2'}`}
               >
-                <div className="bg-white border-3 border-foreground/80 rounded-3xl p-6 shadow-scrapbook transition-bounce hover:rotate-0 hover:scale-105">
+                <div className="relative bg-white border-3 border-foreground/80 rounded-3xl p-6 shadow-scrapbook transition-bounce hover:rotate-0 hover:scale-105">
                   {/* Photo with decorative border */}
                   <div className="relative mb-6">
                     <div className="bg-gradient-to-br from-red-200 to-yellow-200 p-4 rounded-3xl shadow-scrapbook">
                       <img
                         src={teacher.image}
                         alt={teacher.name}
-                        className="w-full aspect-square object-cover rounded-2xl border-2 border-foreground/60"
+                        className="w-full aspect-[3/4] object-cover rounded-2xl border-2 border-foreground/60"
                       />
                     </div>
                     

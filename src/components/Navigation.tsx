@@ -3,6 +3,7 @@ import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { motion, AnimatePresence } from "framer-motion";
 import { useNavigate, useLocation } from "react-router-dom";
+import logoCircle from "@/assets/logo-circle.png";
 
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -63,11 +64,14 @@ const Navigation = () => {
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: 0.2 }}
-            className="text-2xl font-display font-bold cursor-pointer"
+            className="flex items-center gap-3 cursor-pointer"
             onClick={() => navigate("/")}
           >
-            <span className="text-primary">NEUTRON</span>
-            <span className="text-foreground ml-1">BANDUNG-2</span>
+            <img src={logoCircle} alt="Neutron Logo" className="h-12 w-12" />
+            <div className="text-xl font-display font-bold">
+              <span className="text-primary">NEUTRON</span>
+              <span className="text-foreground ml-1">BANDUNG-2</span>
+            </div>
           </motion.div>
 
           {/* Desktop Navigation */}
@@ -87,7 +91,7 @@ const Navigation = () => {
             ))}
             <Button 
               onClick={() => handleNavClick("/#contact")}
-              className="bg-primary text-primary-foreground hover:bg-primary/90 transition-smooth shadow-scrapbook"
+              className="bg-primary text-white hover:bg-primary/90 transition-smooth shadow-scrapbook"
             >
               Daftar Sekarang
             </Button>
@@ -124,7 +128,7 @@ const Navigation = () => {
               ))}
               <Button 
                 onClick={() => handleNavClick("/#contact")}
-                className="bg-primary text-primary-foreground w-full shadow-scrapbook"
+                className="bg-primary text-white w-full shadow-scrapbook"
               >
                 Daftar Sekarang
               </Button>

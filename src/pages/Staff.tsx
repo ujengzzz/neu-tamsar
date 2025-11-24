@@ -4,40 +4,83 @@ import { useRef } from "react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Mail, Phone } from "lucide-react";
+import staffSugino from "@/assets/staff-sugino.jpg";
+import staffFariza from "@/assets/staff-fariza.jpg";
+import staffSusanti from "@/assets/staff-susanti.jpg";
+import staffIndriyani from "@/assets/staff-indriyani.jpg";
+import staffSlamet from "@/assets/staff-slamet.jpg";
+import staffShohibul from "@/assets/staff-shohibul.jpg";
+import staffKurnia from "@/assets/staff-kurnia.jpg";
+import staffSugianto from "@/assets/staff-sugianto.jpg";
+import staffHilqi from "@/assets/staff-hilqi.jpg";
 
 const Staff = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
-  // Placeholder staff data
   const staffMembers = [
     {
-      name: "Sarah Johnson",
-      role: "Direktur",
-      email: "sarah@neutron.com",
+      name: "Sugino",
+      role: "Kepala Cabang",
+      email: "sugino@neutron-bandung2.com",
       phone: "+62 812-3456-7890",
-      image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&h=400&fit=crop",
+      image: staffSugino,
     },
     {
-      name: "Michael Chen",
-      role: "Manajer Operasional",
-      email: "michael@neutron.com",
+      name: "Fariza Ardhia",
+      role: "Bendahara",
+      email: "fariza@neutron-bandung2.com",
       phone: "+62 812-3456-7891",
-      image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&h=400&fit=crop",
+      image: staffFariza,
     },
     {
-      name: "Amanda Putri",
-      role: "Admin & Customer Service",
-      email: "amanda@neutron.com",
+      name: "Susanti",
+      role: "Staf Admin",
+      email: "susanti@neutron-bandung2.com",
       phone: "+62 812-3456-7892",
-      image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&h=400&fit=crop",
+      image: staffSusanti,
     },
     {
-      name: "David Santoso",
-      role: "Koordinator Akademik",
-      email: "david@neutron.com",
+      name: "Indriyani Susanti",
+      role: "Staf Admin",
+      email: "indriyani@neutron-bandung2.com",
       phone: "+62 812-3456-7893",
-      image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop",
+      image: staffIndriyani,
+    },
+    {
+      name: "Slamet Arifin",
+      role: "Staf Pendidikan",
+      email: "slamet@neutron-bandung2.com",
+      phone: "+62 812-3456-7894",
+      image: staffSlamet,
+    },
+    {
+      name: "Shohibul Kahfi",
+      role: "Staf Pendidikan",
+      email: "shohibul@neutron-bandung2.com",
+      phone: "+62 812-3456-7895",
+      image: staffShohibul,
+    },
+    {
+      name: "Kurnia",
+      role: "Staf Rumah Tangga",
+      email: "kurnia@neutron-bandung2.com",
+      phone: "+62 812-3456-7896",
+      image: staffKurnia,
+    },
+    {
+      name: "Sugianto",
+      role: "Staf Rumah Tangga",
+      email: "sugianto@neutron-bandung2.com",
+      phone: "+62 812-3456-7897",
+      image: staffSugianto,
+    },
+    {
+      name: "Hilqi Prawesty",
+      role: "P2K",
+      email: "hilqi@neutron-bandung2.com",
+      phone: "+62 812-3456-7898",
+      image: staffHilqi,
     },
   ];
 
@@ -65,24 +108,24 @@ const Staff = () => {
       </section>
 
       {/* Staff Grid */}
-      <section ref={ref} className="py-16 px-4">
+      <section ref={ref} className="py-16 px-4 pb-32">
         <div className="container mx-auto">
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {staffMembers.map((staff, index) => (
               <motion.div
                 key={index}
                 initial={{ opacity: 0, y: 30 }}
                 animate={isInView ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.6, delay: index * 0.1 }}
-                className={`group ${index % 2 === 0 ? 'rotate-1' : '-rotate-1'}`}
+                className={`group ${index % 3 === 0 ? 'rotate-1' : index % 3 === 1 ? '-rotate-1' : 'rotate-2'}`}
               >
-                <div className="bg-white border-3 border-foreground/80 rounded-3xl p-6 shadow-scrapbook transition-bounce hover:rotate-0 hover:scale-105">
+                <div className="relative bg-white border-3 border-foreground/80 rounded-3xl p-6 shadow-scrapbook transition-bounce hover:rotate-0 hover:scale-105">
                   {/* Polaroid-style photo */}
                   <div className="bg-white p-3 border-2 border-foreground/60 rounded-2xl mb-4 shadow-scrapbook">
                     <img
                       src={staff.image}
                       alt={staff.name}
-                      className="w-full aspect-square object-cover rounded-xl"
+                      className="w-full aspect-[3/4] object-cover rounded-xl"
                     />
                   </div>
                   
@@ -95,11 +138,11 @@ const Staff = () => {
                   {/* Contact */}
                   <div className="space-y-2 text-sm text-muted-foreground">
                     <div className="flex items-center gap-2">
-                      <Mail className="w-4 h-4" />
+                      <Mail className="w-4 h-4 flex-shrink-0" />
                       <span className="truncate">{staff.email}</span>
                     </div>
                     <div className="flex items-center gap-2">
-                      <Phone className="w-4 h-4" />
+                      <Phone className="w-4 h-4 flex-shrink-0" />
                       <span>{staff.phone}</span>
                     </div>
                   </div>

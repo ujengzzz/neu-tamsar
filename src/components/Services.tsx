@@ -13,7 +13,8 @@ const Services = () => {
       title: "Tingkat SD",
       description: "Program bimbingan belajar untuk siswa Sekolah Dasar dengan metode fun learning yang menyenangkan.",
       features: ["Matematika Dasar", "Bahasa Indonesia", "IPA & IPS", "Bahasa Inggris"],
-      color: "bg-red-100 border-red-300",
+      color: "from-red-200 to-pink-200",
+      borderColor: "border-red-300",
       rotation: "-rotate-2",
     },
     {
@@ -21,7 +22,8 @@ const Services = () => {
       title: "Tingkat SMP",
       description: "Persiapan menghadapi ujian dan materi pelajaran SMP dengan pendekatan yang mudah dipahami.",
       features: ["Matematika", "IPA Terpadu", "Bahasa Inggris", "Persiapan Ujian"],
-      color: "bg-yellow-100 border-yellow-300",
+      color: "from-yellow-200 to-orange-200",
+      borderColor: "border-yellow-300",
       rotation: "rotate-1",
     },
     {
@@ -29,7 +31,8 @@ const Services = () => {
       title: "Tingkat SMA",
       description: "Fokus pada persiapan UTBK, ujian sekolah, dan pendalaman materi untuk masuk PTN favorit.",
       features: ["Saintek & Soshum", "UTBK Preparation", "TPS & TKA", "Simulasi Ujian"],
-      color: "bg-blue-100 border-blue-300",
+      color: "from-blue-200 to-cyan-200",
+      borderColor: "border-blue-300",
       rotation: "-rotate-1",
     },
     {
@@ -37,7 +40,8 @@ const Services = () => {
       title: "Gap Year",
       description: "Program intensif untuk alumni SMA yang ingin mempersiapkan diri masuk universitas impian.",
       features: ["Intensive UTBK", "Strategi Belajar", "Mock Test", "Konseling Jurusan"],
-      color: "bg-green-100 border-green-300",
+      color: "from-green-200 to-emerald-200",
+      borderColor: "border-green-300",
       rotation: "rotate-2",
     },
   ];
@@ -77,7 +81,7 @@ const Services = () => {
             >
               <div className={`relative bg-white border-3 border-foreground/80 rounded-3xl p-8 h-full transition-bounce hover:scale-105 shadow-scrapbook ${category.rotation} hover:rotate-0`}>
                 {/* Icon */}
-                <div className={`w-20 h-20 ${category.color} border-2 border-foreground/60 rounded-2xl flex items-center justify-center mb-6 shadow-scrapbook`}>
+                <div className={`w-20 h-20 bg-gradient-to-br ${category.color} ${category.borderColor} border-2 rounded-2xl flex items-center justify-center mb-6 shadow-scrapbook`}>
                   <category.icon className="w-10 h-10 text-foreground" strokeWidth={2.5} />
                 </div>
 
