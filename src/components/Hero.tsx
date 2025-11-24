@@ -29,48 +29,8 @@ const Hero = () => {
               <img src={logoWithName} alt="Neutron Bandung-2" className="h-16 md:h-20" />
             </div>
             
-            <h1 className="text-4xl md:text-6xl font-display font-bold mb-6 text-foreground leading-tight">Langkah Pasti
-Meraih Prestasi                                                                                                                                                                                                                             
-                                                                                                                                                                                                                                                                                                             
-                 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
- <Sparkles className="inline w-12 h-12 text-yellow-500" />
+            <h1 className="text-4xl md:text-6xl font-display font-bold mb-6 text-foreground leading-tight">
+            <Sparkles className="inline w-12 h-12 text-yellow-500" />
             </h1>
             
             <p className="text-lg text-foreground/80 mb-8 font-body leading-relaxed">
