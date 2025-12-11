@@ -2,10 +2,10 @@ import { Facebook, Twitter, Instagram, Linkedin, Github, MessageCircle } from "l
 const Footer = () => {
   const socialLinks = [{
     icon: Instagram,
-    href: "instagram.com/neutron.bandung"
+    href: "https://instagram.com/neutron.bandung"
   }, {
     icon: MessageCircle,
-    href: "wa.me/6285179730339"
+    href: "https://wa.me/6285179730339"
   }];
   return <footer className="border-t border-border/50 bg-card/30 backdrop-blur-sm">
       <div className="container mx-auto px-4 py-12">
