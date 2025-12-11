@@ -21,7 +21,7 @@ const Contact = () => {
   }, {
     icon: MapPin,
     label: "Location",
-    value: "Bandung, West Java, Indonesia",
+    value: "Jl. Buah Batu no.253, Kota Bandung",
     href: "https://maps.app.goo.gl/4zkiqefHzmPHpbgj8"
   }];
   return <section id="contact" ref={ref} className="py-24 relative overflow-hidden">
