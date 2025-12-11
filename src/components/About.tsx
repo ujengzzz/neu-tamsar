@@ -24,7 +24,7 @@ const About = () => {
   }, {
     icon: BookOpen,
     title: "Metode Belajar",
-    description: "Kombinasi teori dan praktik dengan pendekatan yang fun dan mudah dipahami."
+    description: "Kombinasi teori dan praktik dengan pendekatan yang fun dan menggunakan metode penalaran."
   }];
   return <section id="about" ref={ref} className="py-24 relative overflow-hidden bg-gradient-to-br from-white via-blue-50/20 to-pink-50/20">
       {/* Decorative Elements */}
