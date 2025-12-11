@@ -3,7 +3,6 @@ import { useInView } from "framer-motion";
 import { useRef } from "react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
-import { Mail, Phone } from "lucide-react";
 import staffSugino from "@/assets/staff-sugino.jpg";
 import staffFariza from "@/assets/staff-fariza.jpg";
 import staffSusanti from "@/assets/staff-susanti.jpg";
@@ -22,64 +21,46 @@ const Staff = () => {
     {
       name: "Sugino",
       role: "Kepala Cabang",
-      email: "sugino@neutron-bandung2.com",
-      phone: "+62 812-3456-7890",
       image: staffSugino,
     },
     {
       name: "Fariza Ardhia",
       role: "Bendahara",
-      email: "fariza@neutron-bandung2.com",
-      phone: "+62 812-3456-7891",
       image: staffFariza,
     },
     {
       name: "Susanti",
       role: "Staf Admin",
-      email: "susanti@neutron-bandung2.com",
-      phone: "+62 812-3456-7892",
       image: staffSusanti,
     },
     {
       name: "Indriyani Susanti",
       role: "Staf Admin",
-      email: "indriyani@neutron-bandung2.com",
-      phone: "+62 812-3456-7893",
       image: staffIndriyani,
     },
     {
       name: "Slamet Arifin",
       role: "Staf Pendidikan",
-      email: "slamet@neutron-bandung2.com",
-      phone: "+62 812-3456-7894",
       image: staffSlamet,
     },
     {
       name: "Shohibul Kahfi",
       role: "Staf Pendidikan",
-      email: "shohibul@neutron-bandung2.com",
-      phone: "+62 812-3456-7895",
       image: staffShohibul,
     },
     {
       name: "Kurnia",
       role: "Staf Rumah Tangga",
-      email: "kurnia@neutron-bandung2.com",
-      phone: "+62 812-3456-7896",
       image: staffKurnia,
     },
     {
       name: "Sugianto",
       role: "Staf Rumah Tangga",
-      email: "sugianto@neutron-bandung2.com",
-      phone: "+62 812-3456-7897",
       image: staffSugianto,
     },
     {
       name: "Hilqi Prawesty",
       role: "P2K",
-      email: "hilqi@neutron-bandung2.com",
-      phone: "+62 812-3456-7898",
       image: staffHilqi,
     },
   ];
@@ -133,19 +114,7 @@ const Staff = () => {
                   <h3 className="text-xl font-display font-bold mb-2 text-foreground">
                     {staff.name}
                   </h3>
-                  <p className="text-primary font-semibold mb-4">{staff.role}</p>
-                  
-                  {/* Contact */}
-                  <div className="space-y-2 text-sm text-muted-foreground">
-                    <div className="flex items-center gap-2">
-                      <Mail className="w-4 h-4 flex-shrink-0" />
-                      <span className="truncate">{staff.email}</span>
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <Phone className="w-4 h-4 flex-shrink-0" />
-                      <span>{staff.phone}</span>
-                    </div>
-                  </div>
+                  <p className="text-primary font-semibold">{staff.role}</p>
 
                   {/* Decorative tape */}
                   <div className="absolute -top-2 left-1/2 -translate-x-1/2 w-16 h-6 bg-yellow-200/60 border border-yellow-300/80 -rotate-3" />

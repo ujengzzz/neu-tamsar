@@ -19,7 +19,7 @@ import teacherAldion from "@/assets/teacher-aldion.jpg";
 import teacherAyi from "@/assets/teacher-ayi.jpg";
 import teacherLaras from "@/assets/teacher-laras.jpg";
 import teacherRyan from "@/assets/teacher-ryan.jpg";
-
+import teacherTarmizi from "@/assets/teacher-tarmizi.jpg";
 const Teachers = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
@@ -99,6 +99,11 @@ const Teachers = () => {
       name: "Ryan Nuary",
       subject: "Bahasa Indonesia",
       image: teacherRyan,
+    },
+    {
+      name: "Tarmizi Pratama",
+      subject: "Ekonomi",
+      image: teacherTarmizi,
     },
   ];
 

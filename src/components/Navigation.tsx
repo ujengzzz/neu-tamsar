@@ -79,7 +79,7 @@ const Navigation = () => {
         }} className="flex items-center gap-3 cursor-pointer" onClick={() => navigate("/")}>
             <img src={logoCircle} alt="Neutron Logo" className="h-12 w-12" />
             <div className="text-xl font-display font-bold">
-              <span className="text-primary">NEUTRON</span>
+              <span className="text-primary">BUBAT</span>
               <span className="text-foreground ml-1">HEBAT</span>
             </div>
           </motion.div>
