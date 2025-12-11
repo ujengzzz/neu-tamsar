@@ -19,47 +19,47 @@ const Staff = () => {
 
   const staffMembers = [
     {
-      name: "Sugino",
+      name: "Sugino (Om Jhin)",
       role: "Kepala Cabang",
       image: staffSugino,
     },
     {
-      name: "Fariza Ardhia",
+      name: "Fariza Ardhia (Mba Ica)",
       role: "Bendahara",
       image: staffFariza,
     },
     {
-      name: "Susanti",
+      name: "Susanti (Mba Usan)",
       role: "Staf Admin",
       image: staffSusanti,
     },
     {
-      name: "Indriyani Susanti",
+      name: "Indriyani Susanti (Mba Indri)",
       role: "Staf Admin",
       image: staffIndriyani,
     },
     {
-      name: "Slamet Arifin",
+      name: "Slamet Arifin (Mas Ipin)",
       role: "Staf Pendidikan",
       image: staffSlamet,
     },
     {
-      name: "Shohibul Kahfi",
+      name: "Shohibul Kahfi (Mas Kahfi)",
       role: "Staf Pendidikan",
       image: staffShohibul,
     },
     {
-      name: "Kurnia",
+      name: "Kurnia (Mas Kur)",
       role: "Staf Rumah Tangga",
       image: staffKurnia,
     },
     {
-      name: "Sugianto",
+      name: "Sugianto (Mas Sugi)",
       role: "Staf Rumah Tangga",
       image: staffSugianto,
     },
     {
-      name: "Hilqi Prawesty",
+      name: "Hilqi Prawesty (Mba Hilqi)",
       role: "P2K",
       image: staffHilqi,
     },
