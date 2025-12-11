@@ -11,18 +11,18 @@ const Contact = () => {
   const contactInfo = [{
     icon: Mail,
     label: "Email",
-    value: "info@neutronbandung2.com",
-    href: "mailto:info@neutronbandung2.com"
+    value: "neutronbuahbatu253@gmail.com",
+    href: "mailto:neutronbuahbatu253@gmail.com"
   }, {
     icon: Phone,
     label: "Phone",
-    value: "+62 123 4567 8900",
-    href: "tel:+621234567890"
+    value: "+62 851-7973-0339",
+    href: "tel:+6285179730339"
   }, {
     icon: MapPin,
     label: "Location",
     value: "Bandung, West Java, Indonesia",
-    href: "#"
+    href: "https://maps.app.goo.gl/4zkiqefHzmPHpbgj8"
   }];
   return <section id="contact" ref={ref} className="py-24 relative overflow-hidden">
       {/* Background decoration */}
@@ -41,7 +41,7 @@ const Contact = () => {
           <div className="inline-block px-4 py-2 bg-primary/10 border border-primary/20 rounded-full mb-4">
             <span className="text-sm text-primary font-medium">Get In Touch</span>
           </div>
-          <h2 className="text-4xl md:text-6xl font-display font-bold mb-6">Komitmen <span className="text-primary">Connect</span>
+          <h2 className="text-4xl md:text-6xl font-display font-bold mb-6">Komitmen <span className="text-primary">Kami</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             Visi dan misi yang telah dirumuskan merupakan pegangan teguh NEUTRON untuk terus berkontribusi di dunia pendidikan Indonesia.
