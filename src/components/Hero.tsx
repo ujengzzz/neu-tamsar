@@ -76,11 +76,20 @@ const Hero = () => {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 mb-12">
-              <Button size="lg" className="group bg-primary hover:bg-primary/90 text-white shadow-scrapbook">
+              <Button 
+                size="lg" 
+                className="group bg-primary hover:bg-primary/90 text-white shadow-scrapbook"
+                onClick={() => window.open('https://wa.me/6285179730339', '_blank')}
+              >
                 Daftar Sekarang
                 <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </Button>
-              <Button size="lg" variant="outline" className="border-2 border-foreground/60 text-foreground hover:bg-foreground/5">
+              <Button 
+                size="lg" 
+                variant="outline" 
+                className="border-2 border-foreground/60 text-foreground hover:bg-foreground/5"
+                onClick={() => window.open('https://neutron.co.id/cabang/neutron-bandung-2', '_blank')}
+              >
                 Lihat Program
               </Button>
             </div>
