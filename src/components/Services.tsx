@@ -62,9 +62,7 @@ const Services = () => {
           <h2 className="text-5xl md:text-7xl font-display font-bold mb-6 text-foreground">
             Pilih <span className="text-primary">Levelmu!</span>
           </h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto font-body">
-            Program-program NEUTRON Bandung 2 terbukti berhasil membimbing lebih dari 60.000 siswa setiap tahunnya di seluruh Indonesia. Temukan program yang paling cocok denganmu.
-          </p>
+          <p className="text-xl text-muted-foreground max-w-2xl mx-auto font-body">Program-program NEUTRON Bandung 2 terbukti berhasil membimbing hampir 1.000 siswa setiap tahunnya di Kota Bandung. Temukan program yang paling cocok denganmu.</p>
         </motion.div>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
