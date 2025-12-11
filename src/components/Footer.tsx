@@ -1,20 +1,11 @@
-import { Facebook, Twitter, Instagram, Linkedin, Github } from "lucide-react";
+import { Facebook, Twitter, Instagram, Linkedin, Github, MessageCircle } from "lucide-react";
 const Footer = () => {
   const socialLinks = [{
-    icon: Facebook,
-    href: "#"
-  }, {
-    icon: Twitter,
-    href: "#"
-  }, {
     icon: Instagram,
-    href: "#"
+    href: "instagram.com/neutron.bandung"
   }, {
-    icon: Linkedin,
-    href: "#"
-  }, {
-    icon: Github,
-    href: "#"
+    icon: MessageCircle,
+    href: "wa.me/6285179730339"
   }];
   return <footer className="border-t border-border/50 bg-card/30 backdrop-blur-sm">
       <div className="container mx-auto px-4 py-12">
