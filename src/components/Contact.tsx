@@ -44,11 +44,10 @@ const Contact = () => {
           <div className="inline-block px-4 py-2 bg-primary/10 border border-primary/20 rounded-full mb-4">
             <span className="text-sm text-primary font-medium">Get In Touch</span>
           </div>
-          <h2 className="text-4xl md:text-6xl font-display font-bold mb-6">
-            Let's <span className="text-primary">Connect</span>
+          <h2 className="text-4xl md:text-6xl font-display font-bold mb-6">Komitmen Kami<span className="text-primary">Connect</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Ready to start your next project? We'd love to hear from you.
+            Visi dan misi yang telah dirumuskan merupakan pegangan teguh NEUTRON untuk terus berkontribusi di dunia pendidikan Indonesia.
           </p>
         </motion.div>
 
