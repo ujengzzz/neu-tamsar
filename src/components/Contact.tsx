@@ -1,10 +1,7 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
-import { Mail, Phone, MapPin, Send } from "lucide-react";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
+import { Mail, Phone, MapPin } from "lucide-react";
 const Contact = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, {
@@ -51,96 +48,29 @@ const Contact = () => {
           </p>
         </motion.div>
 
-        <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
-          {/* Contact Info */}
-          <motion.div initial={{
-          opacity: 0,
-          x: -50
-        }} animate={isInView ? {
-          opacity: 1,
-          x: 0
-        } : {}} transition={{
-          duration: 0.6,
-          delay: 0.2
-        }} className="space-y-8">
-            <div>
-              <h3 className="text-3xl font-display font-bold mb-4">
-                We're Here to <span className="text-accent">Help</span>
-              </h3>
-              <p className="text-muted-foreground leading-relaxed">
-                Whether you have a question about our services, need a quote, or want to 
-                discuss a potential project, our team is ready to answer all your questions.
-              </p>
-            </div>
-
-            <div className="space-y-6">
-              {contactInfo.map((item, index) => <motion.a key={index} href={item.href} initial={{
-              opacity: 0,
-              x: -30
-            }} animate={isInView ? {
-              opacity: 1,
-              x: 0
-            } : {}} transition={{
-              duration: 0.6,
-              delay: 0.4 + index * 0.1
-            }} className="group flex items-start gap-4 p-4 bg-card/50 backdrop-blur-sm border border-border/50 rounded-xl hover:border-primary/50 transition-smooth">
-                  <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-smooth flex-shrink-0">
-                    <item.icon className="w-6 h-6 text-primary" />
-                  </div>
-                  <div>
-                    <div className="text-sm text-muted-foreground mb-1">{item.label}</div>
-                    <div className="font-medium group-hover:text-primary transition-smooth">
-                      {item.value}
-                    </div>
-                  </div>
-                </motion.a>)}
-            </div>
-          </motion.div>
-
-          {/* Contact Form */}
-          <motion.div initial={{
-          opacity: 0,
-          x: 50
-        }} animate={isInView ? {
-          opacity: 1,
-          x: 0
-        } : {}} transition={{
-          duration: 0.6,
-          delay: 0.4
-        }} className="bg-card/50 backdrop-blur-sm border border-border/50 rounded-2xl p-8">
-            <form className="space-y-6">
-              <div className="grid sm:grid-cols-2 gap-4">
-                <div className="space-y-2">
-                  <label className="text-sm font-medium">First Name</label>
-                  <Input placeholder="John" className="bg-background/50 border-border/50 focus:border-primary transition-smooth" />
+        <div className="max-w-4xl mx-auto">
+          <div className="grid sm:grid-cols-3 gap-6">
+            {contactInfo.map((item, index) => (
+              <motion.a 
+                key={index} 
+                href={item.href} 
+                initial={{ opacity: 0, y: 30 }}
+                animate={isInView ? { opacity: 1, y: 0 } : {}}
+                transition={{ duration: 0.6, delay: 0.2 + index * 0.1 }}
+                className="group flex flex-col items-center gap-4 p-6 bg-card/50 backdrop-blur-sm border border-border/50 rounded-2xl hover:border-primary/50 transition-smooth text-center"
+              >
+                <div className="w-16 h-16 rounded-2xl bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-smooth">
+                  <item.icon className="w-8 h-8 text-primary" />
                 </div>
-                <div className="space-y-2">
-                  <label className="text-sm font-medium">Last Name</label>
-                  <Input placeholder="Doe" className="bg-background/50 border-border/50 focus:border-primary transition-smooth" />
+                <div>
+                  <div className="text-sm text-muted-foreground mb-1">{item.label}</div>
+                  <div className="font-medium group-hover:text-primary transition-smooth">
+                    {item.value}
+                  </div>
                 </div>
-              </div>
-
-              <div className="space-y-2">
-                <label className="text-sm font-medium">Email</label>
-                <Input type="email" placeholder="john@example.com" className="bg-background/50 border-border/50 focus:border-primary transition-smooth" />
-              </div>
-
-              <div className="space-y-2">
-                <label className="text-sm font-medium">Subject</label>
-                <Input placeholder="How can we help?" className="bg-background/50 border-border/50 focus:border-primary transition-smooth" />
-              </div>
-
-              <div className="space-y-2">
-                <label className="text-sm font-medium">Message</label>
-                <Textarea placeholder="Tell us about your project..." rows={5} className="bg-background/50 border-border/50 focus:border-primary transition-smooth resize-none" />
-              </div>
-
-              <Button type="submit" size="lg" className="w-full gradient-primary text-primary-foreground glow-primary hover:scale-105 transition-smooth group">
-                Send Message
-                <Send className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-smooth" />
-              </Button>
-            </form>
-          </motion.div>
+              </motion.a>
+            ))}
+          </div>
         </div>
       </div>
     </section>;
