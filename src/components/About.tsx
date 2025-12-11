@@ -96,11 +96,11 @@ NEUTRON Bandung 2 memiliki berbagai program terbaik yang bertujuan untuk memberi
             {/* Fun Stats */}
             <div className="flex gap-4 pt-4">
               <div className="bg-red-100 border-2 border-red-300 rounded-2xl p-4 shadow-scrapbook transform -rotate-1">
-                <div className="text-2xl font-display font-bold text-foreground">15+</div>
+                <div className="text-2xl font-display font-bold text-foreground">30+</div>
                 <div className="text-sm text-foreground/70">Tahun</div>
               </div>
               <div className="bg-yellow-100 border-2 border-yellow-300 rounded-2xl p-4 shadow-scrapbook transform rotate-1">
-                <div className="text-2xl font-display font-bold text-foreground">500+</div>
+                <div className="text-2xl font-display font-bold text-foreground">1Jt+</div>
                 <div className="text-sm text-foreground/70">Alumni</div>
               </div>
               <div className="bg-blue-100 border-2 border-blue-300 rounded-2xl p-4 shadow-scrapbook transform -rotate-2">

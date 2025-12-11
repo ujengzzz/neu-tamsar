@@ -96,7 +96,7 @@ const Hero = () => {
             }} transition={{
               delay: 0.4
             }} className="text-center bg-white p-4 rounded-2xl border-2 border-foreground/20 shadow-scrapbook transform -rotate-1 hover:rotate-0 transition-bounce">
-                <div className="text-3xl font-display font-bold text-primary">15+</div>
+                <div className="text-3xl font-display font-bold text-primary">30+</div>
                 <div className="text-xs text-muted-foreground">Tahun Pengalaman</div>
               </motion.div>
               <motion.div initial={{
@@ -108,8 +108,8 @@ const Hero = () => {
             }} transition={{
               delay: 0.5
             }} className="text-center bg-white p-4 rounded-2xl border-2 border-foreground/20 shadow-scrapbook transform rotate-1 hover:rotate-0 transition-bounce">
-                <div className="text-3xl font-display font-bold text-primary">500+</div>
-                <div className="text-xs text-muted-foreground">Siswa Lulus PTN</div>
+                <div className="text-3xl font-display font-bold text-primary">1.000.000+</div>
+                <div className="text-xs text-muted-foreground">Siswa Berprestasi</div>
               </motion.div>
               <motion.div initial={{
               opacity: 0,
@@ -140,7 +140,7 @@ const Hero = () => {
             {/* Main polaroid */}
             <div className="relative bg-white p-4 border-3 border-foreground/80 rounded-3xl shadow-scrapbook transform rotate-2 hover:rotate-0 transition-bounce">
               <img src={heroImage} alt="Gedung Neutron Bandung-2" className="w-full aspect-[4/3] object-cover rounded-2xl border-2 border-foreground/60" />
-              <p className="text-center mt-3 font-handwritten text-lg text-foreground">Gedung Neutron Bandung-2 ✨</p>
+              <p className="text-center mt-3 font-handwritten text-lg text-foreground">Neutron Bandung-2 ✨</p>
               
               {/* Decorative tape */}
               <div className="absolute -top-3 left-1/4 w-20 h-7 bg-red-400/50 border border-red-500/60 -rotate-12" />
