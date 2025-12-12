@@ -12,7 +12,7 @@ const About = () => {
   const features = [{
     icon: Target,
     title: "Visi Kami",
-    description: "Menjadikan NEUTRON yang terbaik di Indonesia dan merupakan pendidikan non formal yang selalu terdepan dalam perubahan yang lebih baik"
+    description: "Menjadikan NEUTRON yang terbaik di Indonesia dan merupakan pendidikan non formal yang selalu terdepan dalam perubahan yang lebih baik."
   }, {
     icon: Users,
     title: "Tim Profesional",
