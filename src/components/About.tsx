@@ -20,7 +20,7 @@ const About = () => {
   }, {
     icon: Award,
     title: "Prestasi Terbukti",
-    description: "Khusus Bandung-2 (Buah Batu) Ratusan siswa berhasil masuk PTN favorit dengan nilai terbaik."
+    description: "Khusus Bandung-1 (Tamansari) Ratusan siswa berhasil masuk PTN favorit dengan nilai terbaik."
   }, {
     icon: BookOpen,
     title: "Metode Belajar",
@@ -46,8 +46,8 @@ const About = () => {
             Kenalan Yuk! <span className="text-primary">😊</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto font-body">
-            NEUTRON Bandung 2 adalah kantor cabang NEUTRON yang ke-2 di Bandung. NEUTRON Bandung 2 terletak di Jl. Buah Batu No. 253, Lengkong, Bandung.<br />
-NEUTRON Bandung 2 memiliki berbagai program terbaik yang bertujuan untuk memberikan hasil terbaik bagi siswa. Selain itu, jajaran pengajar dan staf NEUTRON Bandung 2 merupakan figur-figur yang memiliki kompetensi tinggi dalam setiap bidang mereka.<br />Kantor cabang ini juga memiliki fasilitas yang lengkap sehingga dapat menunjang proses belajar-mengajar dan memberikan hasil yang terbaik.
+            NEUTRON Bandung 1 adalah kantor cabang NEUTRON yang ke-1 di Bandung. NEUTRON Bandung 1 terletak di Jl. Tamansari No. 61, Coblong, Bandung.<br />
+NEUTRON Bandung 1 memiliki berbagai program terbaik yang bertujuan untuk memberikan hasil terbaik bagi siswa. Selain itu, jajaran pengajar dan staf NEUTRON Bandung 1 merupakan figur-figur yang memiliki kompetensi tinggi dalam setiap bidang mereka.<br />Kantor cabang ini juga memiliki fasilitas yang lengkap sehingga dapat menunjang proses belajar-mengajar dan memberikan hasil yang terbaik.
           </p>
         </motion.div>
 
